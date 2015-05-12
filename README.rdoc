@@ -25,17 +25,17 @@ for MIME type definitions found in mime-types is the
 {IANA Media Types registry}[https://www.iana.org/assignments/media-types/media-types.xhtml],
 RFCs, and W3C recommendations. It conforms to RFCs 2045 and 2231.
 
-This is release 2.5 with a couple of bug fixes, updating to the latest IANA
-type registry, and adding a user-contributed type. mime-types 2.x supports Ruby
-1.9.2 or later.
+This is release 2.6…
+
+mime-types 2.x supports Ruby 1.9.2 or later.
 
 === mime-types 1.x End of Life
 
 mime-types 2.0 was released in late 2013, and as of early 2015 there have been
 no reported security issues for mime-types 1.x. With the release of mime-types
-2.5, I setting the formal End of Life for mime-types 1.x for 2015-10-27 (the
-second anniversary of the release of mime-types 2.0). After this date,
-absolutely no pull requests for mime-types 1.x will be accepted.
+2.5, I set the formal End of Life for mime-types 1.x for 2015-10-27 (the second
+anniversary of the release of mime-types 2.0). After this date, absolutely no
+pull requests for mime-types 1.x will be accepted.
 
 === mime-types Future
 
@@ -129,7 +129,7 @@ In practical terms, there should be a MINOR release roughly monthly to track
 updated or changed MIME types from the official IANA registry. This does not
 indicate when new API features have been added, but all minor versions of
 mime-types 2.x will be backwards compatible; the interfaces marked deprecated
-will not be removed until at least mime-types 3.x or possibly later.
+will be removed in mime-types 3.x.
 
 :include: Contributing.rdoc
 

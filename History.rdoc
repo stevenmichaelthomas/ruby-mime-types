@@ -1,7 +1,26 @@
+== 2.6 / 2015-05-DD
+
+* New Feature:
+  * Columnar data storage for the MIME::Types registry, contributed by Jeremy
+    Evans (@jeremyevans). Reduces default memory use substantially (the mail
+    gem drops from 19 Mib to about 3 Mib). Resolves
+    {#96}[https://github.com/mime-types/ruby-mime-types/pull/96],
+    {#94}[https://github.com/mime-types/ruby-mime-types/issues/94],
+    {#83}[https://github.com/mime-types/ruby-mime-types/issues/83]. Partially
+    addresses {#64}[https://github.com/mime-types/ruby-mime-types/issues/64]
+    and {#62}[https://github.com/mime-types/ruby-mime-types/issues/62].
+* Development:
+  * Removed caching of deprecation messages in preparation for mime-types 3.0.
+    Now, deprecated methods will always warn their deprecation instead of only
+    warning once.
+* Documentation:
+  * Improved documentation and ensured that all deprecated methods are marked
+    as such in the documentation.
+
 == 2.5 / 2015-04-25
 
 * Bugs:
-  * David Genord (@albus522) fixed a bug in loading MIME::types cache where a
+  * David Genord (@albus522) fixed a bug in loading MIME::Types cache where a
     container loaded from cache did not have the expected +default_proc+,
     {#86}[https://github.com/mime-types/ruby-mime-types/pull/86].
   * Richard Schneeman (@schneems) provided a patch that substantially reduces

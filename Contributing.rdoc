@@ -3,7 +3,7 @@
 I value any contribution to mime-types you can provide: a bug report, a feature
 request, or code contributions.
 
-As mime-types is a mature codebase, there are a few guidelines:
+There are a few guidelines for contributing to mime-types:
 
 * Code changes *will* *not* be accepted without tests. The test suite is
   written with {Minitest}[https://github.com/seattlerb/minitest].
@@ -18,9 +18,12 @@ As mime-types is a mature codebase, there are a few guidelines:
 
 === Adding or Modifying MIME Types
 
-The mime-types registry is loaded from a JSON file in +data+, but this file is
-not considered editable and cannot be compared in a pull request. New or
-modified MIME types should be edited in the appropriate YAML file under
+The mime-types registry is loaded from encoded files in +data+. These are not
+editable and cannot be compared meaningfully in a pull request; pull requests
+that include changes to these files will require amendment to revert these
+files.
+
+New or modified MIME types should be edited in the appropriate YAML file under
 +type-lists+. The format is as shown below for the +application/xml+ MIME type
 in +type-lists/application.yml+.
 
@@ -97,24 +100,31 @@ Here's the most direct way to get your work merged into the project:
 
 Thanks to everyone else who has contributed to mime-types:
 
+* Aaron Patterson
+* Aggelos Avgerinos
 * Andre Pankratz
-* Mauricio Linhares
-* Richard Hirner
-* Todd Carrico
+* Andy Brody
+* Arnaud Meuret
+* Brandon Galbraith
+* Chris Gat
+* David Genord
+* Eric Marden
 * Garret Alfert
+* Godfrey Chan
+* Greg Brockman
 * Hans de Graaff
 * Henrik Hodne
-* Martin d'Allens
-* Chris Gat
-* Greg Brockman
-* Łukasz Śliwa (for the friendly names)
-* Keerthi Siva
-* Aaron Patterson
-* Godfrey Chan
-* Tibor Szolár
-* Ken Ip
-* David Genord
+* Jeremy Evans
 * Juanito Fatas
-* Andy Brody
-* Aggelow Avgerinos
+* Łukasz Śliwa
+* Keerthi Siva
+* Ken Ip
+* Martin d'Allens
+* Mauricio Linhares
+* nycvotes-dev
+* Postmodern
+* Richard Hirner
+* Richard Hurt
 * Richard Schneeman
+* Tibor Szolár
+* Todd Carrico
