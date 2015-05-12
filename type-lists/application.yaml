@@ -1168,7 +1168,7 @@
     uri:
     - http://www.w3.org/TR/2007/CR-emma-20071211/#media-type-registration
     text:
-    - 
+    -
   registered: true
 - !ruby/object:MIME::Type
   content-type: application/emotionml+xml
@@ -1348,7 +1348,7 @@
     person:
     - Levantovsky
     text:
-    - 
+    -
     template:
     - application/font-sfnt
   registered: true
@@ -1376,6 +1376,7 @@
   encoding: base64
   extensions:
   - woff
+  - woff2
   references:
   - IANA
   - "[W3C]"
@@ -4687,7 +4688,7 @@
     person:
     - Gottfried_Zimmermann
     text:
-    - 
+    -
     template:
     - application/urc-grpsheet+xml
   registered: true
@@ -4702,7 +4703,7 @@
     person:
     - Gottfried_Zimmermann
     text:
-    - 
+    -
     template:
     - application/urc-ressheet+xml
   registered: true
@@ -4717,7 +4718,7 @@
     person:
     - Gottfried_Zimmermann
     text:
-    - 
+    -
     template:
     - application/urc-targetdesc+xml
   registered: true
